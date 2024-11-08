@@ -47,7 +47,7 @@ LANGUAGE PYTHON;
 
 
 CREATE TABLE temperature_measurements (
-  city STRING,
+  city STRINGA,
   temperature FLOAT,
   measurement_time TIMESTAMP(3),
   WATERMARK FOR measurement_time AS measurement_time - INTERVAL '15' SECONDS
